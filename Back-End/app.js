@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
-//let pathMongo = 'mongodb+srv://admin-luca:Luca123@cluster0-alpfu.mongodb.net/todolistDB?retryWrites=true&w=majority'
+// make sure mongo db is running 
 let pathMongo ='mongodb://localhost:27017/wikiDB'
 mongoose.connect(pathMongo,{useNewUrlParser: true,useUnifiedTopology: true, useFindAndModify: false});
 
