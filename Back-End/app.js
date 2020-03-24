@@ -132,10 +132,6 @@ app.route(ARTICLES_URI+'/:id')
 })
 .delete((req,res) => {
     const id = req.params.id
-    const title = req.body.id; 
-    console.log(id);
-    console.log(title);
-    
     
     Article.deleteOne({_id:id},(err) => {
         if(!err){
