@@ -1,7 +1,7 @@
 # Show_Case_Fullstack
 Express app back-end + React app front-end
 
-Before running the application make sure node is install.
+Before running the application make sure node is install and you have a mongoDB server running on localhost:27017.
 
 To run the application:
 
